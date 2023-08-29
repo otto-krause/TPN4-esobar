@@ -1,0 +1,22 @@
+#include <stdio.h>
+int v(float l, float a) {
+	float p = 2 * (l + a);
+	float ar = a* a;
+	
+	printf("Perímetro: %.2f\n", p);
+	printf("area: %.2f\n", ar);
+}
+
+int main() {
+	float l, a;
+	
+	printf("Ingresa el largo del rectángulo: ");
+	scanf("%f", &l);
+	
+	printf("Ingresa el ancho del rectángulo: ");
+	scanf("%f", &a);
+	
+	v(l, a);
+	
+	return 0;
+}
